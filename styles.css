@@ -134,3 +134,34 @@ h1 {
 .quote {
     font-weight: bold;
 }
+
+.critic {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 8px 0 30px 8px;
+}
+
+.critic img {
+    flex: 0 0 auto;
+}
+
+.publication {
+    font-style: italic;
+}
+
+.review p {
+    margin: 0;
+}
+
+.review p {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 0;
+}
+
+.review-icon {
+    flex: 0 0 auto;
+}
