@@ -378,6 +378,70 @@
 
     </div>
 
+    <div id="critical-thinking">
+    
+        <h2>Critical Thinking Questions</h2>
+    
+        <h3>01 — Cascade Investigation</h3>
+        
+        <p>
+            I normally give each review box its background color with the
+            .review selector. The original rule is
+            background-color: #E1D697, which gives the review
+            boxes their light yellow background.
+        </p>
+        
+        <p>
+            For my cascade test, I removed
+            background-color: #E1D697; from the
+            .review rule. I also used the more specific
+            #reviews .review selector as a second rule that
+            supplies the same background color.
+        </p>
+        
+        <p>
+            This shows that the final appearance is determined by
+            the cascade: the browser considers both matching selectors,
+            and the selector with greater specificity wins. In this test,
+            source order is not needed to break the tie because the second
+            selector already has higher specificity.
+        </p>
+
+            <h4>Evidence — Before Removing Background</h4>
+            
+            <img class="evidence-image" src="before_removing_background.png"
+                alt="Screenshot showing the review box before removing its background color" />
+            
+            
+            <h4>Evidence — After Removing Background</h4>
+            
+            <img class="evidence-image" src="after_removing_background.png"
+                alt="Screenshot showing the review box after removing its background color" />
+    
+        <h3>02 — Responsive Trade-Off</h3>
+        
+        <p>
+            At the viewport width of 400px, my main container changes the desktop layout
+            to width: 100%; because of the media query rule. I get a 4px border on both sides
+            the grid area is about 392px wide. I was trying to change the review area from 
+            two columns to one column, but changing both grid-template-columns wouldnt have
+            a change in the result. This made the review column narrower and caused overlapping
+            with using grid-template-columns: repeat(2, 1fr) since it stuck to the required
+            two column width.
+        </p>
+
+            <h4>Evidence — 480px Layout</h4>
+            
+            <img class="evidence-image" src="480px_layout.png" alt="Screenshot of the movie review page at 480 pixels wide" />
+            
+            
+            <h4>Evidence — Two-Column Comparison at 480px</h4>
+            
+            <img class="evidence-image" src="column_layout_480px.png"
+                alt="Screenshot showing the two-column review layout at 480 pixels wide" />
+    
+    </div>
+
 </body>
 
 </html>
